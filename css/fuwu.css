@@ -1,0 +1,79 @@
+
+/********************************/
+.gundong{
+	position: relative;
+	width: 1200px;
+	height: 96px;
+	margin:0 auto;
+	margin-top:30px;
+	padding:20px 0;
+	overflow: hidden;
+
+}
+.gundong ul{
+	position: absolute;
+	top: 24px;
+	left: 0;
+	width: 4200px;
+	height: 96px;
+}
+.gundong ul li{
+	float: left;
+	width: 180px;
+	height:70px;
+	text-align: center;
+	margin-right: 20px;
+}
+.gundong ul li p{
+	color: #fff;
+	width: 180px;
+	height: 26px;
+	line-height: 26px;
+}
+
+/*********轮播**********/
+.lunbo{
+	position: relative;
+	margin:50px auto;
+	width:700px;
+	height: 410px;
+	overflow: hidden;
+}
+#lun{
+	position: absolute;
+	left: 0;
+	top:0;
+	width: 4200px;
+	height: 410px;	
+}
+#lun li{
+	float: left;
+	width: 700px;
+	height: 410px;
+}
+#bo{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 700px;
+	height: 40px;	
+}
+#bo li{
+	float: left;
+	width: 110px;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	background: #333;
+	margin-right:8px;
+	border-top:2px solid transparent;
+}
+#bo li:last-child{
+	margin-right: 0;
+}
+#bo .on{
+	color: #f60;
+	border-top:2px solid #f60;
+}
