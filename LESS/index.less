@@ -469,8 +469,21 @@
 		}
 	}
 	.ad-fuwu{
+		position:relative;
 		.auto;
+		height:360px;
+		overflow:hidden;
 		ul{
+			position:absolute;
+			left:0;
+			top:0;
+			width:1200px;
+			overflow:hidden;
+			transition:all 0.5s;
+			-webkit-transition:all 0.5s;
+			-o-transition:all 0.5s;
+			-moz-transition:all 0.5s;
+			background:#fff;
 			li{
 				float:left;
 				width:200px;
@@ -496,11 +509,111 @@
 					margin:20px 0;
 				}
 				span{
+					cursor:pointer;
 					color: #ffc000;
 					font-size: 12px;
 				}
 			}
 		}
+		// .xuan-box{
+		// 	position:relative;
+			.dlBox{
+				display:none;
+				position:absolute;
+				top:0;
+				left:0;
+				width:1200px;
+				height:360px;
+				background:#fff;
+				.xuan{
+					dl{
+						width:1200px;
+						height:110px;
+						background-color:#F6F6F6;
+						dt{
+							width: 80px;
+							height: 80px;
+							margin-left: 50px;
+							margin-right: 20px;
+							margin-top: 20px;
+							img{
+								width:80px;
+								height:80px;
+							}
+						}
+						dd{
+							width:750px;
+							height:80px;
+							padding-top:30px;
+							h2{
+								margin-bottom: 5px;
+								color: #333;
+								font-size: 24px;
+								font-weight: 400;
+								text-align: left;
+							}
+							p{
+								font-size: 14px;
+								color: #999;
+								i{
+									color:#ff0000;
+								}
+							}
+						}
+						.now{
+							width: 160px;
+							height: 40px;
+							line-height: 40px;
+							text-align: center;
+							color: rgb(255, 192, 0);
+							font-size: 16px;
+							margin:34px 54px 0 0;
+							font-weight: 400;
+							border-width: 1px;
+							border-style: solid;
+							border-color: rgb(255, 192, 0);
+							border-image: initial;
+						}
+					}
+					
+				}
+				.lie{
+					.lie-tu{
+						width:198px;
+						height:198px;
+						margin:10px 20px;
+						color:#999;
+						border:1px solid #eee;
+						text-align:center;
+						img{
+							display:block;
+							width:100px;
+							height:100px;
+							margin:28px auto;
+						}
+						span{
+							
+						}
+					}
+					.lie-tu:hover{
+						background: #fff;
+						border-color: #9fccfd;
+						color: #666;
+					}
+				}
+				.cha{
+				position:absolute;
+				top:0;
+				right:0;
+				cursor:pointer;
+				display:block;
+				width:40px;
+				height:25px;
+				background: url(../img/cha.png) no-repeat center;
+			}
+			}
+			
+		//}
 		
 	}
 	.hangye{

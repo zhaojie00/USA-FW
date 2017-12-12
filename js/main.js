@@ -14,6 +14,20 @@ $(function(){
 		$('#ul-top li').eq(0).addClass('on').siblings().removeClass('on');
 	})
 })
+/*中间详情订购*/
+$(function(){
+	$('#ad-fuwu .ad-fu-qi li').click(function(){
+		var i = $(this).index();
+		$('#ad-fuwu .ad-fu-qi').css({left:-1200+'px',});
+		$('#ad-fuwu .dlBox').eq(i).show(500).siblings('.dlBox').hide(100);
+		
+	})
+	$('#ad-fuwu .dlBox .cha').click(function(){
+		$('#ad-fuwu .dlBox').hide(100);
+		$('#ad-fuwu .ad-fu-qi').css({left:0+'px',});
+	})
+	
+})
 /*中间侧显框*/
 $(function(){
 	$('#seo li').mouseover(function(){
@@ -45,6 +59,7 @@ $(function(){
 		$('#lunbotu .dian span').eq(k).addClass('the').siblings().removeClass('the');
 		$('#lunbotu .bo li').eq(k).fadeIn().siblings().fadeOut();
 	}).mouseout(function(){autoPlay();});
+	clearInterval(timer);
 	autoPlay();
 	function autoPlay(){
 		var k = 0;
