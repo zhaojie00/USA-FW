@@ -53,14 +53,20 @@
 .header .top-box .top .login {
   margin-top: 28px;
 }
-.header .top-box .top .login span {
+.header .top-box .top .login a {
+  color: #fff;
+  display: inline-block;
+}
+.header .top-box .top .login a span {
   display: inline-block;
   padding: 5px 15px;
   cursor: pointer;
+}
+.header .top-box .top .login a .login-x {
   background: #6495fc;
   border-bottom: 4px solid #5184ef;
 }
-.header .top-box .top .login .regsiter {
+.header .top-box .top .login a .regsiter {
   background: #ffa92e;
   border-bottom: 4px solid #e89013;
   margin-right: 10px;
