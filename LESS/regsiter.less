@@ -6,7 +6,6 @@
 .header{
 	position:relative;
 	width: 100%;
-	overflow:hidden;
 	.top-box{
 		position:relative;
 		z-index: 66;
@@ -336,6 +335,7 @@
 	}
 }
 .zc-box{
+	position:relative;
 	.auto;
 	.hot{
 		width:960px;
@@ -401,6 +401,7 @@
 			width:600px;
 		}
 		.from-item{
+			position:relative;
 			width:800px;
 			margin:30px 0;
 			margin-left:200px;
@@ -421,6 +422,13 @@
 				text-indent: 10px;
 				margin-left:20px;
 				color:#000;
+			}
+			i{
+				width:280px;
+				height:28px;
+				text-indent: 10px;
+				margin-left:20px;
+				color:red;
 			}
 		}
 		.yan{
@@ -462,9 +470,12 @@
 			width:160px;
 			height:45px;
 			margin:30px auto;
-			a{
+			input{
 				display:block;
-
+				width:160px;
+				height:45px;
+				border:0;
+				cursor:pointer;
 				line-height:45px;
 				text-align:center;
 				color:#fff;

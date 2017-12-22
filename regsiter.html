@@ -9,7 +9,8 @@
 <link href="css/base.css" rel="stylesheet">
 <link href="css/regsiter.css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/content.js"></script>
+<script src="js/zc.js"></script>
 </head>
 <body>
     <div class="header clear">
@@ -40,7 +41,7 @@
 			</div>			
 		</div>
 	</div>
-	<div class="nav-box" id="nav-box">
+	<div class="nav-box clear" id="nav-box">
 		<ul>
 			<li class="none"></li>
 			<!--1热销服务器-->
@@ -173,14 +174,14 @@
 		</div>
     </div>
 	<!--注册表主体-->
-	<div class="zc-box">
-	<form action="">
+	<div class="zc-box clear">
+	<form name="form1" method="post" action="yanzheng.php" id="zhuce">
 		<div class="hot"><b>最新活动:</b>注册即享网站全部功能，获得全新服务体验。
 		</div>
-		<div class="zhuce-box">
+		<div class="zhuce-box" id="inp-box">
 			<div class="zc-t">
 				<h2>用户注册</h2>
-				<p>已有账户?<a href="###">立即登录</a>或使用快捷登陆：
+				<p>已有账户?<a href="login.html">立即登录</a>或使用快捷登陆：
 					<span class="kuai">
 						<i class="qq">
 							<img src="img/qq-dl.png" alt="">
@@ -195,49 +196,55 @@
 				</p>
 			</div>
 			<div class="from-item chuang">
-				<span><sup>*</sup>创建账户</span>
+				<span><sup class="sup">*</sup>创建账户</span>
 				<input id="" class="" autocomplete="" name="uname" value="" placeholder="用户名只能由5~18位的字母及数字组成！" maxlength="18">
+				<i class="tixing"></i>
 			</div>
 			<div class="from-item chuang">
-				<span><sup>*</sup>输入密码</span>
-				<input id="" class="" autocomplete="" name="uname" value="" placeholder="请填写6位以上密码！" maxlength="18">
+				<span><sup class="sup">*</sup>输入密码</span>
+				<input id="" class="" autocomplete="" name="upaw" value="" placeholder="请填写6位以上密码！" maxlength="18">
+				<i class="tixing"></i>
 			</div>
 			<div class="from-item chuang">
-				<span><sup>*</sup>确认密码</span>
-				<input id="" class="" autocomplete="" name="uname" value="" placeholder="重新填写你的密码！" maxlength="18">
+				<span><sup class="sup">*</sup>确认密码</span>
+				<input id="" class="" autocomplete="" name="upaws" value="" placeholder="重新填写你的密码！" maxlength="18">
+				<i class="tixing"></i>
 			</div>
 			<div class="from-item chuang">
-				<span><sup>*</sup>您的邮箱</span>
-				<input id="" class="" autocomplete="" name="uname" value="" placeholder="填写你的邮箱！" maxlength="18">
+				<span><sup class="sup">*</sup>您的邮箱</span>
+				<input id="" class="" autocomplete="" name="email" value="" placeholder="填写你的邮箱！" maxlength="18">
+				<i class="tixing"></i>
 			</div>
 			<div class="from-item chuang">
-				<span><sup>*</sup>您的手机号</span>
-				<input id="" class="" autocomplete="" name="uname" value="" placeholder="填写你的手机号！" maxlength="18">
+				<span><sup class="sup">*</sup>您的手机号</span>
+				<input id="" class="" autocomplete="" name="phone" value="" placeholder="填写你的手机号！" maxlength="18">
+				<i class="tixing"></i>
 			</div>
 			<div class="zc-t zc-t-2">
 				<h2>账户验证</h2>
 			</div>
 			<div class="from-item yan">
-				<span><sup>*</sup>验证码</span>
-				<input id="" class="" autocomplete="" name="uname" value="" placeholder="请输入验证码！" maxlength="18">
-				<i>
-					<img src="img/page.gif" alt="">
+				<span><sup class="sup">*</sup>验证码</span>
+				<input id="" class="" autocomplete="" name="yanzheng" value="" placeholder="请输入验证码！" maxlength="18">
+				<i id="yz">
+					<img src="img/yzm/0.gif" alt="" id="yzm">
 				</i>
+				<i class="tixing"></i>
 			</div>
 			<div class="read">
-				<input type="checkbox" name="tiaokuan">
+				<input type="checkbox" name="tiaokuan"
+				id="check">
 				<span>我已阅读并同意</span>
 				<a href="###">《华普在线服务协议》</a>
 			</div>
 			<div class="submin">
-				<a href="###">立即注册</a>
+				<input type="botton" id="submit" class="" autocomplete="" name="submit" value="立即注册">
 			</div>
-
 		</div>
 	</form>
 	</div>
 	<!--footer-->
-    <div class="footer-box">
+    <div class="footer-box clear">
 		<div class="contact">
 			<ul>
 				<li>

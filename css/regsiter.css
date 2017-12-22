@@ -6,7 +6,6 @@
 .header {
   position: relative;
   width: 100%;
-  overflow: hidden;
 }
 .header .top-box {
   position: relative;
@@ -341,6 +340,7 @@
   background-position-x: -11px;
 }
 .zc-box {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
 }
@@ -405,6 +405,7 @@
   width: 600px;
 }
 .zc-box .zhuce-box .from-item {
+  position: relative;
   width: 800px;
   margin: 30px 0;
   margin-left: 200px;
@@ -426,6 +427,13 @@
   text-indent: 10px;
   margin-left: 20px;
   color: #000;
+}
+.zc-box .zhuce-box .from-item i {
+  width: 280px;
+  height: 28px;
+  text-indent: 10px;
+  margin-left: 20px;
+  color: red;
 }
 .zc-box .zhuce-box .yan input {
   width: 140px;
@@ -463,8 +471,12 @@
   height: 45px;
   margin: 30px auto;
 }
-.zc-box .zhuce-box .submin a {
+.zc-box .zhuce-box .submin input {
   display: block;
+  width: 160px;
+  height: 45px;
+  border: 0;
+  cursor: pointer;
   line-height: 45px;
   text-align: center;
   color: #fff;

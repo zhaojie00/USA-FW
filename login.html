@@ -9,7 +9,8 @@
 <link href="css/base.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <script src="js/jquery-3.2.1.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/content.js"></script>
+<script src="js/dl.js"></script>
 </head>
 <body>
     <div class="header clear">
@@ -174,26 +175,29 @@
     </div>
 	<!--登录表主体-->
 	<div class="dl-box">
-		<form action="">
-			<div class="zhuce-box">
+		<form name="form2" method="post" action="yanzheng.php" id="zhuce2">
+			<div class="zhuce-box" id="inp-box2">
 				<div class="zc-t">
 					<h2>用户登录</h2>
 				</div>
 
 				<div class="from-item chuang">
-					<span><sup>*</sup>创建账户</span>
+					<span><sup class="sup">*</sup>用户名:</span>
 					<input id="" class="" autocomplete="" name="uname" value="" placeholder="用户名只能由5~18位的字母及数字组成！" maxlength="18">
+					<i class="tixing"></i>
 				</div>
 				<div class="from-item chuang">
-					<span><sup>*</sup>创建账户</span>
+					<span><sup class="sup">*</sup>密码:</span>
 					<input id="" class="" autocomplete="" name="uname" value="" placeholder="用户名只能由5~18位的字母及数字组成！" maxlength="18">
+					<i class="tixing"></i>
 				</div>
 				<div class="from-item yan">
-					<span><sup>*</sup>验证码</span>
-					<input id="" class="" autocomplete="" name="uname" value="" placeholder="请输入验证码！" maxlength="18">
-					<i>
-						<img src="img/page.gif" alt="">
+					<span><sup class="sup">*</sup>验证码:</span>
+					<input autocomplete="" name="uname" value="" placeholder="请输入验证码！" maxlength="18">
+					<i id="yz">
+						<img src="img/yzm/0.gif" alt="" id="yzm">
 					</i>
+					<i class="tixing"></i>
 				</div>
 				<div class="kuai">
 					<i>快捷登陆：</i>
@@ -211,11 +215,11 @@
 				</div>
 
 			<div class="submin">
-				<a href="###">立即登录</a>
+				<input type="button" id="submit" autocomplete="" name="submit" value="立即登录">
 			</div>
 			<div class="zc-no">
 				<span>没有帐号?</span>
-				<a href="###">马上注册</a>
+				<a href="regsiter.html">马上注册</a>
 				<a href="###">忘记密码了?</a>
 			</div>
 		</div>

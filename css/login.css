@@ -394,6 +394,13 @@
   margin-left: 20px;
   color: #000;
 }
+.dl-box .zhuce-box .from-item i {
+  width: 280px;
+  height: 28px;
+  text-indent: 10px;
+  margin-left: 20px;
+  color: red;
+}
 .dl-box .zhuce-box .yan input {
   width: 140px;
   height: 28px;
@@ -431,8 +438,11 @@
   margin: 30px 0;
   margin-left: 80px;
 }
-.dl-box .zhuce-box .submin a {
+.dl-box .zhuce-box .submin input {
   display: block;
+  width: 160px;
+  height: 45px;
+  border: 0;
   line-height: 45px;
   text-align: center;
   color: #fff;
